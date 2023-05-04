@@ -1,0 +1,17 @@
+name: cgx
+channels:
+  - conda-forge
+  - mosek
+dependencies:
+  # run
+  - invoke
+  - python == 3.8
+  - keras-tuner
+  - seaborn
+  - pandas
+  - numpy
+  - scikit-learn
+  - mosek
+  - pip
+  - pip:
+    - python-box==6.1.0
