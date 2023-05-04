@@ -1,23 +1,22 @@
 # cgx
 
-Implementation of ICLR 2023 Workshop paper: "CGXplain: Rule-Based Deep Neural Network Explanations Using Dual Linear Programs"
+Implementation of ICLR 2023 Workshop paper: [CGXplain: Rule-Based Deep Neural Network Explanations Using Dual Linear Programs](https://openreview.net/pdf?id=bHbf5-nE8N)
 
-Accepted at ICLR Workshop on Trustworthy ML for Healthcare (TML4H). 
+Accepted at ICLR Workshop on Trustworthy ML for Healthcare ([TML4H](https://sites.google.com/view/tml4h2023/home?authuser=0)). 
 
 ## Setup
-Run the CLI commands to install required dependencies. Note that this setup requires `homebrew`
+Run the CLI commands to install required dependencies. Note that this setup requires `conda`, but we recommend 
+using [`mamba`](https://mamba.readthedocs.io/en/latest/installation.html) for a faster installation.
 
 ```shell
 conda env create -f environment.yml
 conda activate cgx
 ```
 
-Note that we recommend using [`mamba`](https://mamba.readthedocs.io/en/latest/installation.html) for a faster installation.
-
 ## Basic Usage
 
 Train a basic neural network. We currently support tensorflow, but plan to add PyTorch support soon.
-We provide some training utils, but any `tensorflow` model can be used.
+We provide some training utils, but any `tensorflow` model can be used to extract rules from. 
 
 
 ### Pedagogical Example
